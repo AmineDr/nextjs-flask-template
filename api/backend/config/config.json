@@ -1,0 +1,15 @@
+{
+  "database": {
+    "name": "",
+    "host": "",
+    "user": "",
+    "password": ""
+  },
+  "database_dev": {
+    "name": "",
+    "host": "",
+    "user": "",
+    "password": ""
+  },
+  "env": "dev"
+}

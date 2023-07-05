@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "flask-dev": "FLASK_DEBUG=1 pip3 install -r requirements.txt && python3 -m flask --app api/index run -p 5328",
+    "flask-dev": "init_flask.bat",
+    "flask-prod": "chmod +x init_flask_prod.sh;./init_flask_prod.sh",
     "next-dev": "next dev",
     "dev": "concurrently \"pnpm run next-dev\" \"pnpm run flask-dev\"",
     "build": "next build",
-    "start": "next start",
+    "start": "concurrently \"pnpm run next-start\" \"pnpm run flask-prod\"",
     "lint": "next lint"
   },
   "dependencies": {
