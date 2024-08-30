@@ -1,3 +1,5 @@
+# THIS IS NOT OPTIMAL FOR PRODUCTION, PLEASE USE .ENV FILES INSTEAD
+
 from types import SimpleNamespace
 import json
 import os
@@ -13,6 +15,7 @@ except json.JSONDecodeError or FileNotFoundError:
 
 class Config:
     """ You can add whatever to the config.json file and use it here """
+    """ TODO : Add more config options and database options (PostgreSQL) """
     DEBUG = False
     SECRET_KEY = os.environ.get("FLASK_SECRET_KEY")
     SQLALCHEMY_TRACK_MODIFICATIONS = True

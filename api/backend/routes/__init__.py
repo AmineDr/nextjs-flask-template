@@ -13,7 +13,7 @@ def catch_all(filename):
     try:
         return send_from_directory(app.static_folder, filename)
     except:
-        return {"status": "Tnakat"}, 500
+        return {"status": "Error"}, 500
 
 @app.errorhandler(500)
 def catch_error(*args):

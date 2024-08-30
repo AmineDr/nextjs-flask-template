@@ -4,4 +4,7 @@
 
 *This flask server uses SQLAlchemy as An ORM*
 
-Bla mziya - Amine Droua
+##### Adding new branches for different features  are always appreciated.
+
+
+- By Amine Droua

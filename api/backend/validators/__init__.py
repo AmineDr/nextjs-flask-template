@@ -5,7 +5,8 @@ class Login(BaseModel):
     username: str
     password: str
 
-    # Atnak do what ever you want you can use regex to validate your data
+    # You can do what ever you want you can use regex to validate your data
+    # This is just an example
     @validator('username')
     def validate_username(cls, username):
         if username.__len__() > 3:
